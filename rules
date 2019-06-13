@@ -1,0 +1,512 @@
+{
+  "rules": [
+    {
+      "id": "#100",
+      "title": "MUST Follow API First Principle"
+    },
+    {
+      "id": "#101",
+      "title": "MUST Provide API Specification using OpenAPI"
+    },
+    {
+      "id": "#102",
+      "title": "SHOULD Provide API User Manual"
+    },
+    {
+      "id": "#103",
+      "title": "MUST Write APIs in U.S. English"
+    },
+    {
+      "id": "#104",
+      "title": "MUST Secure Endpoints with OAuth 2.0"
+    },
+    {
+      "id": "#105",
+      "title": "MUST Define and Assign Permissions (Scopes)"
+    },
+    {
+      "id": "#106",
+      "title": "MUST Don’t Break Backward Compatibility"
+    },
+    {
+      "id": "#107",
+      "title": "SHOULD Prefer Compatible Extensions"
+    },
+    {
+      "id": "#108",
+      "title": "MUST Prepare Clients To Not Crash On Compatible API Extensions"
+    },
+    {
+      "id": "#109",
+      "title": "SHOULD Design APIs Conservatively"
+    },
+    {
+      "id": "#110",
+      "title": "MUST Always Return JSON Objects As Top-Level Data Structures To Support Extensibility"
+    },
+    {
+      "id": "#111",
+      "title": "MUST Treat Open API Definitions As Open For Extension By Default"
+    },
+    {
+      "id": "#112",
+      "title": "SHOULD Used Open-Ended List of Values (`x-extensible-enum`) Instead of Enumerations"
+    },
+    {
+      "id": "#113",
+      "title": "SHOULD Avoid Versioning"
+    },
+    {
+      "id": "#114",
+      "title": "MUST Use Media Type Versioning"
+    },
+    {
+      "id": "#115",
+      "title": "MUST Do Not Use URI Versioning"
+    },
+    {
+      "id": "#116",
+      "title": "MUST Use Semantic Versioning"
+    },
+    {
+      "id": "#118",
+      "title": "MUST Property names must be ASCII snake_case (and never camelCase): `^[a-z_][a-z_0-9]*$`"
+    },
+    {
+      "id": "#120",
+      "title": "SHOULD Array names should be pluralized"
+    },
+    {
+      "id": "#122",
+      "title": "MUST Boolean property values must not be null"
+    },
+    {
+      "id": "#123",
+      "title": "SHOULD Null values should have their fields removed"
+    },
+    {
+      "id": "#124",
+      "title": "SHOULD Empty array values should not be null"
+    },
+    {
+      "id": "#125",
+      "title": "SHOULD Enumerations should be represented as Strings"
+    },
+    {
+      "id": "#126",
+      "title": "SHOULD Date property values should conform to RFC 3339"
+    },
+    {
+      "id": "#127",
+      "title": "MAY Time durations and intervals could conform to ISO 8601"
+    },
+    {
+      "id": "#128",
+      "title": "MAY Standards could be used for Language, Country and Currency"
+    },
+    {
+      "id": "#129",
+      "title": "MUST Use lowercase separate words with hyphens for Path Segments"
+    },
+    {
+      "id": "#130",
+      "title": "MUST Use snake_case (never camelCase) for Query Parameters"
+    },
+    {
+      "id": "#132",
+      "title": "SHOULD Prefer Hyphenated-Pascal-Case for HTTP header Fields"
+    },
+    {
+      "id": "#133",
+      "title": "MAY Use Standardized Headers"
+    },
+    {
+      "id": "#134",
+      "title": "MUST Pluralize Resource Names"
+    },
+    {
+      "id": "#135",
+      "title": "SHOULD Not Use /api as Base Path"
+    },
+    {
+      "id": "#136",
+      "title": "MUST Avoid Trailing Slashes"
+    },
+    {
+      "id": "#137",
+      "title": "MUST Stick to Conventional Query Parameters"
+    },
+    {
+      "id": "#138",
+      "title": "MUST Avoid Actions — Think About Resources"
+    },
+    {
+      "id": "#139",
+      "title": "SHOULD Model complete business processes"
+    },
+    {
+      "id": "#140",
+      "title": "SHOULD Define _useful_ resources"
+    },
+    {
+      "id": "#141",
+      "title": "MUST Keep URLs Verb-Free"
+    },
+    {
+      "id": "#142",
+      "title": "MUST Use Domain-Specific Resource Names"
+    },
+    {
+      "id": "#143",
+      "title": "MUST Identify resources and Sub-Resources via Path Segments"
+    },
+    {
+      "id": "#144",
+      "title": "SHOULD Only Use UUIDs If Necessary"
+    },
+    {
+      "id": "#145",
+      "title": "MAY Consider Using (Non-) Nested URLs"
+    },
+    {
+      "id": "#146",
+      "title": "SHOULD Limit number of Resource types"
+    },
+    {
+      "id": "#147",
+      "title": "SHOULD Limit number of Sub-Resource Levels"
+    },
+    {
+      "id": "#148",
+      "title": "MUST Use HTTP Methods Correctly"
+    },
+    {
+      "id": "#149",
+      "title": "MUST Fulfill Common Method Properties"
+    },
+    {
+      "id": "#150",
+      "title": "MUST Use Standard HTTP Status Codes"
+    },
+    {
+      "id": "#151",
+      "title": "MUST Specify Success and Error Responses"
+    },
+    {
+      "id": "#152",
+      "title": "MUST Use Code 207 for Batch or Bulk Requests"
+    },
+    {
+      "id": "#153",
+      "title": "MUST Use Code 429 with Headers for Rate Limits"
+    },
+    {
+      "id": "#154",
+      "title": "SHOULD Define Collection Format of Query Parameters and Headers"
+    },
+    {
+      "id": "#155",
+      "title": "SHOULD Reduce Bandwidth Needs and Improve Responsiveness"
+    },
+    {
+      "id": "#156",
+      "title": "SHOULD Use gzip Compression"
+    },
+    {
+      "id": "#157",
+      "title": "SHOULD Support Partial Responses via Filtering"
+    },
+    {
+      "id": "#158",
+      "title": "SHOULD Allow Optional Embedding of Sub-Resources"
+    },
+    {
+      "id": "#159",
+      "title": "MUST Support Pagination"
+    },
+    {
+      "id": "#160",
+      "title": "SHOULD Prefer Cursor-Based Pagination, Avoid Offset-Based Pagination"
+    },
+    {
+      "id": "#161",
+      "title": "MAY Use Pagination Links Where Applicable"
+    },
+    {
+      "id": "#162",
+      "title": "MUST Use REST Maturity Level 2"
+    },
+    {
+      "id": "#163",
+      "title": "MAY Use REST Maturity Level 3 - HATEOAS"
+    },
+    {
+      "id": "#164",
+      "title": "MUST Use Common Hypertext Controls"
+    },
+    {
+      "id": "#165",
+      "title": "SHOULD Use Simple Hypertext Controls for Pagination and Self-References"
+    },
+    {
+      "id": "#166",
+      "title": "MUST Not Use Link Headers with JSON entities"
+    },
+    {
+      "id": "#167",
+      "title": "MUST Use JSON to Encode Structured Data"
+    },
+    {
+      "id": "#168",
+      "title": "MAY Use non JSON Media Types for Binary Data or Alternative Content Representations"
+    },
+    {
+      "id": "#169",
+      "title": "MUST Use Standard Date and Time Formats"
+    },
+    {
+      "id": "#170",
+      "title": "MAY Use Standards for Country, Language and Currency Codes"
+    },
+    {
+      "id": "#171",
+      "title": "MUST Define Format for Type Number and Integer"
+    },
+    {
+      "id": "#172",
+      "title": "SHOULD Prefer standard Media type name `application/json`"
+    },
+    {
+      "id": "#173",
+      "title": "SHOULD Use a Common Money Object"
+    },
+    {
+      "id": "#174",
+      "title": "MUST Use common field names and semantics"
+    },
+    {
+      "id": "#176",
+      "title": "MUST Use Problem JSON"
+    },
+    {
+      "id": "#177",
+      "title": "MUST Do not expose Stack Traces"
+    },
+    {
+      "id": "#178",
+      "title": "MUST Use `Content-*` Headers Correctly"
+    },
+    {
+      "id": "#179",
+      "title": "MAY Use `Content-Location` Header"
+    },
+    {
+      "id": "#180",
+      "title": "SHOULD Use `Location` Header instead of `Content-Location` Header"
+    },
+    {
+      "id": "#181",
+      "title": "MAY Consider to Support `Prefer` Header to Handle Processing Preferences"
+    },
+    {
+      "id": "#182",
+      "title": "MAY Consider to Support `ETag` Together With `If-Match`/`If-None-Match` Header"
+    },
+    {
+      "id": "#183",
+      "title": "MUST Use Only the Specified Proprietary Zalando Headers"
+    },
+    {
+      "id": "#184",
+      "title": "MUST Propagate Proprietary Headers"
+    },
+    {
+      "id": "#185",
+      "title": "MUST Obtain Approval of Clients"
+    },
+    {
+      "id": "#186",
+      "title": "MUST External Partners Must Agree on Deprecation Timespan"
+    },
+    {
+      "id": "#187",
+      "title": "MUST Reflect Deprecation in API Definition"
+    },
+    {
+      "id": "#188",
+      "title": "MUST Monitor Usage of Deprecated APIs"
+    },
+    {
+      "id": "#189",
+      "title": "SHOULD Add a Warning Header to Responses"
+    },
+    {
+      "id": "#190",
+      "title": "SHOULD Add Monitoring for Warning Header"
+    },
+    {
+      "id": "#191",
+      "title": "MUST Not Start Using Deprecated APIs"
+    },
+    {
+      "id": "#192",
+      "title": "MUST Publish OpenAPI Specification"
+    },
+    {
+      "id": "#193",
+      "title": "SHOULD Monitor API Usage"
+    },
+    {
+      "id": "#194",
+      "title": "MUST Treat Events as part of the service interface"
+    },
+    {
+      "id": "#195",
+      "title": "MUST Make Event schema available for review"
+    },
+    {
+      "id": "#196",
+      "title": "MUST Ensure Event schema conforms to Open API Schema Object"
+    },
+    {
+      "id": "#197",
+      "title": "MUST Ensure that Events are registered as Event Types"
+    },
+    {
+      "id": "#198",
+      "title": "MUST Ensure Events conform to a well-known Event Category"
+    },
+    {
+      "id": "#199",
+      "title": "MUST Ensure that Events define useful business resources"
+    },
+    {
+      "id": "#200",
+      "title": "MUST Events must not provide sensitive customer personal data"
+    },
+    {
+      "id": "#201",
+      "title": "MUST Use the General Event Category to signal steps and arrival points in business processes"
+    },
+    {
+      "id": "#202",
+      "title": "MUST Use Data Change Events to signal mutations"
+    },
+    {
+      "id": "#203",
+      "title": "SHOULD Provide a means for explicit event ordering"
+    },
+    {
+      "id": "#204",
+      "title": "SHOULD Use the hash partition strategy for Data Change Events"
+    },
+    {
+      "id": "#205",
+      "title": "SHOULD Ensure that Data Change Events match API representations"
+    },
+    {
+      "id": "#206",
+      "title": "MUST Permissions on events must correspond to API permissions"
+    },
+    {
+      "id": "#207",
+      "title": "MUST Indicate ownership of Event Types"
+    },
+    {
+      "id": "#208",
+      "title": "MUST Define Event Payloads in accordance with the overall Guidelines"
+    },
+    {
+      "id": "#209",
+      "title": "MUST Maintain backwards compatibility for Events"
+    },
+    {
+      "id": "#210",
+      "title": "SHOULD Avoid `additionalProperties` in event type definitions"
+    },
+    {
+      "id": "#211",
+      "title": "MUST Use unique Event identifiers"
+    },
+    {
+      "id": "#212",
+      "title": "SHOULD Design for idempotent out-of-order processing"
+    },
+    {
+      "id": "#213",
+      "title": "MUST Follow Naming Convention for Event Type Names"
+    },
+    {
+      "id": "#214",
+      "title": "MUST Prepare for duplicate Events"
+    },
+    {
+      "id": "#215",
+      "title": "MUST Provide API Identifiers"
+    },
+    {
+      "id": "#216",
+      "title": "SHOULD Define Maps Using `additionalProperties`"
+    },
+    {
+      "id": "#217",
+      "title": "MUST Use full, absolute URI"
+    },
+    {
+      "id": "#218",
+      "title": "MUST Contain API Meta Information"
+    },
+    {
+      "id": "#219",
+      "title": "MUST Provide API Audience"
+    },
+    {
+      "id": "#220",
+      "title": "MUST Use Most Specific HTTP Status Codes"
+    },
+    {
+      "id": "#223",
+      "title": "MUST-SHOULD Use Functional Naming Schema"
+    },
+    {
+      "id": "#224",
+      "title": "MUST Follow Naming Convention for Hostnames"
+    },
+    {
+      "id": "#225",
+      "title": "MUST Follow Naming Convention for Permissions (Scopes)"
+    },
+    {
+      "id": "#226",
+      "title": "MUST Document Implicit Filtering"
+    },
+    {
+      "id": "#227",
+      "title": "MUST Document Cachable `GET`, `HEAD`, and `POST` Endpoints"
+    },
+    {
+      "id": "#228",
+      "title": "MUST Use URL-friendly Resource Identifiers: [a-zA-Z0-9:._-]*"
+    },
+    {
+      "id": "#229",
+      "title": "SHOULD Consider To Design `POST` and `PATCH` Idempotent"
+    },
+    {
+      "id": "#230",
+      "title": "MAY Consider to Support `Idempotency-Key` Header"
+    },
+    {
+      "id": "#231",
+      "title": "Should Use Secondary Key for Idempotent `POST` Design"
+    },
+    {
+      "id": "#233",
+      "title": "MUST Support `X-Flow-ID`"
+    },
+    {
+      "id": "#234",
+      "title": "MUST only use Durable and Immutable Remote References"
+    }
+  ]
+}
